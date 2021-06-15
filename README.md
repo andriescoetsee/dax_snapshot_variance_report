@@ -2,10 +2,11 @@
 
 ![](/images/Dataset Illustration.png)
 
-```
+```Python
 Base Claims Paid Value (local) = 
 IF(
-    ISBLANK([Sum Claims Paid Value (local)]),  ---- only calculate for values when we have data
+---- only calculate for values when we have data
+    ISBLANK([Sum Claims Paid Value (local)]),  
     BLANK(),
     CALCULATE(    
             [Claims Paid Value (local)],
