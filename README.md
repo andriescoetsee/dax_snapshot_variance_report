@@ -6,7 +6,7 @@ Each file contains a 1:m relationship between the <b>Processing Month</b> and th
 
 For example processing month March includes reporting months January, February and March. 
 
-<b>Business Requirements</b> 
+<b>Business Requirement</b> 
 * For each processing month business want to report only on the latest reporting month as a snapshot that remains fixed for all subsequent reporting.
 * Furthermore, business wants to do a variance report on how each reporting month differs across processing months
 
@@ -32,7 +32,8 @@ CALCULATE(
         [Sum Revenue Amount],
         FILTER(
             'Sales per Product',
-            'Sales per Product'[IsSnapshot] = TRUE  ---- this is where Processing Month = Reporting Month
+            ---- this is where Processing Month = Reporting Month
+            'Sales per Product'[IsSnapshot] = TRUE  
         )
 )
 ```
@@ -43,7 +44,8 @@ CALCULATE(
 ```
 Base Revenue Amount = 
 IF(
-    ISBLANK([Sum Revenue Amount]),  ---- only calculate for values when we have data
+    ---- only calculate for values when we have data
+    ISBLANK([Sum Revenue Amount]),  
     BLANK(),
     CALCULATE(    
             [Snapshot Revenue Amount],
