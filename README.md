@@ -2,12 +2,12 @@
 
 ## Problem Statement
 
-Each file contains a 1:m relationship between the <b>Processing Month</b> and the <b>Reporting Month</b>
+Each file contains a 1:m relationship between the **Processing Month** and the **Reporting Month**
 
 For example processing month March includes reporting months January, February and March. 
 
-<b>Business Requirement</b> 
-* For each processing month business want to report only on the latest reporting month as a snapshot that remains fixed for all subsequent reporting.
+**Business Requirement** 
+* For each processing month business wants to report only on the latest reporting month as a snapshot that remains fixed for all subsequent reporting.
 * Furthermore, business wants to do a variance report on how each reporting month differs across processing months
 
 ### Dataset overview
@@ -55,7 +55,7 @@ IF(
 ```
 ---
 
-### Step 4: Calculate % difference
+### Step 4: Calculate % difference compared to the Snapshot
 
 ```
 % Diff Snapshot Revenue Amount = 
