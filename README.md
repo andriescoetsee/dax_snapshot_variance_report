@@ -106,5 +106,7 @@ IF(
 
 ## Conclusion
 
-[To see the Reports in Power BI Desktop, click here](https://github.com/andriescoetsee/dax_snapshot_variance_report/blob/cdaaff91cf891915c93bd60c079b8d44b73ddfa1/Report%20Illustration.pbix)
+[To download the Power BI Desktop report file, click here...](https://github.com/andriescoetsee/dax_snapshot_variance_report/blob/cdaaff91cf891915c93bd60c079b8d44b73ddfa1/Report%20Illustration.pbix)
+
+[To see all files in Github](https://github.com/andriescoetsee/dax_snapshot_variance_report)
 
